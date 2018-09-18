@@ -38,4 +38,5 @@ Par souci d'économie de temps, ce projet a été réalisé de manière très si
 * afficher la vidéo dans un player pour pouvoir la jouer;
 * afficher toutes les vidéos (et pas seulement la 1ère page);
 * afficher plus de détails sur la vidéo (cast, genres etc.);
+* utiliser Redux pour fetcher les données en dehors des composants
 * et bien d'autres encore !
