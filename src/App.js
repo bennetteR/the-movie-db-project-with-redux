@@ -10,19 +10,12 @@ class App extends Component {
     this.handleGenreChange = this.handleGenreChange.bind(this);
     this.state = {
       movies: [],
-      genres: [],
       genreId: 28
     };
   }
 
   componentDidMount() {
     this.renderMovies();
-
-    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=92b418e837b833be308bbfb1fb2aca1e')
-    .then(response => response.json())
-    .then(data => this.setState({
-        genres: data.genres
-      })); 
   }
 
   handleGenreChange(e) {
@@ -49,7 +42,7 @@ class App extends Component {
         </header>
         <p className='app-intro'>
           Sélectionnez un genre 
-          <GenreSelector handleGenreChange={ this.handleGenreChange } genres={ this.state.genres } />
+          <GenreSelector handleGenreChange={ this.handleGenreChange } />
         </p>
         <div className='movies-container'>
         <ul className='movies-list'>
