@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Movie from './components/Movie';
+import GenreSelector from './components/GenreSelector';
 import './App.css';
 
 class App extends Component {
@@ -22,14 +23,6 @@ class App extends Component {
     .then(data => this.setState({
         genres: data.genres
       })); 
-  }
-
-  renderOptions() {
-    var optionsArr = [];
-    this.state.genres.forEach((genre, index) => {
-        optionsArr.push(<option key={index} value={genre.id}>{genre.name}</option>);
-    })
-    return optionsArr;
   }
 
   handleGenreChange(e) {
@@ -56,9 +49,7 @@ class App extends Component {
         </header>
         <p className='app-intro'>
           Sélectionnez un genre 
-          <select onChange={ this.handleGenreChange }>
-            { this.renderOptions() }
-          </select>
+          <GenreSelector handleGenreChange={ this.handleGenreChange } genres={ this.state.genres } />
         </p>
         <div className='movies-container'>
         <ul className='movies-list'>

@@ -27,7 +27,6 @@ class Movie extends Component {
   }
 
   openModal(){
-    console.log(this.props.details)
     this.setState({
       showModal: true
     })
@@ -46,6 +45,7 @@ class Movie extends Component {
           onRequestClose={this.closeModal}
           contentLabel="Example Modal"
           style={ this.customStyles }
+          ariaHideApp={ false }
         >
           <button className='close-modal' onClick={this.closeModal}>X</button>
           <ModalInfo movie={this.props.details} />
@@ -59,7 +59,6 @@ class Movie extends Component {
       </div>
     );
   }
-  
 }
 
 export default Movie;
