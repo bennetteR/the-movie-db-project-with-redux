@@ -1,0 +1,38 @@
+li.movie-item {
+    width: 250px;
+    list-style: none;
+    display: inline-block;
+    height: 350px;
+    background-color: #eeeeee;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.movie-img {
+    margin-top: 10px;
+}
+
+.movie-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button.close-modal {
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    right: 5%;
+    position: absolute;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #555555;
+}
+
+button.close-modal:hover {
+    background-color: #8c9191;
+}
