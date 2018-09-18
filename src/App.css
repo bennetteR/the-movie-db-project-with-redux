@@ -17,24 +17,6 @@
   font-size: large;
 }
 
-select {
-  background-color: #fff;
-  border-color: #d9d9d9 #ccc #b3b3b3;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  color: #333;
-  cursor: default;
-  border-spacing: 0;
-  border-collapse: separate;
-  height: 36px;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  width: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
 .movies-container {
   width: 80%;
   margin: 0 auto;
