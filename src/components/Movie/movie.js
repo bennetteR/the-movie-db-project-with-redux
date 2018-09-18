@@ -37,6 +37,7 @@ class Movie extends Component {
   }
 
   render() {
+    console.log(this.props.details)
     return (
       <div>
         <Modal
@@ -52,7 +53,11 @@ class Movie extends Component {
         </Modal>
         <li className='movie-item' onClick={ this.openModal }>
           <div className='movie-img'>
-            <img src={ `https://image.tmdb.org/t/p/w185_and_h278_bestv2/${ this.props.details.poster_path }` } alt='poster' />
+            {this.props.details.poster_path === null ? (
+              <img src='https://fakeimg.pl/185x278/' alt='poster' />
+              ) : (
+              <img src={ `https://image.tmdb.org/t/p/w185_and_h278_bestv2/${ this.props.details.poster_path }` } alt='poster' />
+            )}
           </div>
           <div className='movie-title'>{ this.props.details.original_title }</div>
         </li>
