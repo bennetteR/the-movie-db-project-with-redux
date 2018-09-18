@@ -29,6 +29,8 @@ Ouvrir http://localhost:3000 pour le visualiser dans le navigateur.
 * **ModalInfo** : card s'affichant dans la Modal et contenant les détails de la vidéo (titre, synopsis, note)
 * **GenreSelector** : Select Input permettant de sélectionner un genre parmi ceux listés en base de données
 
+Le composant [react-modal](https://github.com/reactjs/react-modal) a été utilisé pour afficher les infos des vidéos. Ce composant est facile à mettre en place et à paramétrer, d'où le choix pour ce projet.
+
 ## Améliorations
 
 Par souci d'économie de temps, ce projet a été réalisé de manière très simple mais de nombreuses améliorations pourraient l'enrichir :
@@ -36,4 +38,4 @@ Par souci d'économie de temps, ce projet a été réalisé de manière très si
 * afficher la vidéo dans un player pour pouvoir la jouer;
 * afficher toutes les vidéos (et pas seulement la 1ère page);
 * afficher plus de détails sur la vidéo (cast, genres etc.);
-* et biens d'autres encore !
+* et bien d'autres encore !
