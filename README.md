@@ -7,7 +7,7 @@ Ce projet a été créé à partir de [Create React App](https://github.com/face
 ## Table of Contents
 
 - [Installation](#installation)
-- [Choix techniques](#choix-technique)
+- [Choix techniques](#choix-techniques)
 - [Améliorations](#améliorations)
 
 ## Installation
@@ -33,7 +33,7 @@ Ouvrir http://localhost:3000 pour le visualiser dans le navigateur.
 
 Par souci d'économie de temps, ce projet a été réalisé de manière très simple mais de nombreuses améliorations pourraient l'enrichir :
 
-* afficher la vidéo dans un player pour pouvoir la jouer
+* afficher la vidéo dans un player pour pouvoir la jouer;
 * afficher toutes les vidéos (et pas seulement la 1ère page);
-* afficher plus de détails sur la vidéo (cast, genres etc.)
+* afficher plus de détails sur la vidéo (cast, genres etc.);
 * et biens d'autres encore !
