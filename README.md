@@ -1,5 +1,5 @@
 
-Single Web App basique qui affiche une liste de vidéos en fonction du genre choisi par l'utilisateur.
+Single Web App basique qui affiche une liste de vidéos en fonction du genre choisi par l'utilisateur, basée sur [the-movie-db-project](https://github.com/bennetteR/the-movie-db-project) avec ajout de Redux.
 
 Ce projet a été créé à partir de [Create React App](https://github.com/facebookincubator/create-react-app).
 
@@ -38,5 +38,4 @@ Par souci d'économie de temps, ce projet a été réalisé de manière très si
 * afficher la vidéo dans un player pour pouvoir la jouer;
 * afficher toutes les vidéos (et pas seulement la 1ère page);
 * afficher plus de détails sur la vidéo (cast, genres etc.);
-* utiliser Redux pour fetcher les données en dehors des composants
 * et bien d'autres encore !
