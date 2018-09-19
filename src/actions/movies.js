@@ -7,7 +7,6 @@ function fetchMoviesSuccess({ results }) {
 }
 
 export function fetchMovies(genreId) {
-  console.log(genreId)
     return (dispatch) => {
         return fetch(`https://api.themoviedb.org/4/discover/movie?api_key=92b418e837b833be308bbfb1fb2aca1e&with_genres=${genreId}&primary_release_year=2018&page=1&with_original_language=en`)
         .then(
