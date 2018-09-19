@@ -37,7 +37,6 @@ class Movie extends Component {
   }
 
   render() {
-    console.log(this.props.details)
     return (
       <div>
         <Modal

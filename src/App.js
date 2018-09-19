@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Movie from './components/Movie';
 import GenreSelector from './components/GenreSelector';
 import './App.css';
+import { fetchMovies } from './actions/movies';
 
 class App extends Component {
 
@@ -9,7 +11,6 @@ class App extends Component {
     super(props);
     this.handleGenreChange = this.handleGenreChange.bind(this);
     this.state = {
-      movies: [],
       genreId: 28
     };
   }
@@ -26,15 +27,11 @@ class App extends Component {
 
   renderMovies(){
     const genreId = this.state.genreId;
-    fetch(`https://api.themoviedb.org/4/discover/movie?api_key=92b418e837b833be308bbfb1fb2aca1e&with_genres=${genreId}&primary_release_year=2018&page=1&with_original_language=en`)
-    .then(response => response.json())
-    .then(data => this.setState({
-      movies: data.results
-    }));
+    this.props.fetchMovies(genreId);
   }
 
   render() {
-    const movies = this.state.movies;
+    const movies = this.props.movies;
     return (
       <div className='app'>
         <header className='app-header'>
@@ -58,4 +55,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  movies: state.movies
+});
+
+const mapDispatchToProps = {
+  fetchMovies
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
