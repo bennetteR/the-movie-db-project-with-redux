@@ -23,8 +23,9 @@ Ouvrir http://localhost:3000 pour le visualiser dans le navigateur.
 
 ## Choix techniques
 
-3 composants ont été créés dans le but de pouvoir être réutilisés :
+4 composants ont été créés dans le but de pouvoir être réutilisés :
 
+* **MoviesList** : container affichant la list des composants **Movie**
 * **Movie** : card affichant la vignette et le titre de la vidéo. Au clic, la Modal contenant les détails s'affiche
 * **ModalInfo** : card s'affichant dans la Modal et contenant les détails de la vidéo (titre, synopsis, note)
 * **GenreSelector** : Select Input permettant de sélectionner un genre parmi ceux listés en base de données

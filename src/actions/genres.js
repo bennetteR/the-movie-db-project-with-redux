@@ -18,3 +18,17 @@ export function fetchGenres() {
         )
     };
 }
+
+export const SET_SELECTED_GENRE_ID = 'SET_SELECTED_GENRE_ID';
+function setSelectedGenreIdSuccess(genreId) {
+  return {
+    type: SET_SELECTED_GENRE_ID,
+    genreId
+  }; 
+}
+
+export function setSelectedGenreId(genreId) {
+  return (dispatch) => {
+    dispatch(setSelectedGenreIdSuccess(genreId))
+  };
+}

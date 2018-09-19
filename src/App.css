@@ -13,16 +13,7 @@
   font-size: 1.5em;
 }
 
-.app-intro {
-  font-size: large;
-}
-
 .movies-container {
   width: 80%;
   margin: 0 auto;
-}
-
-ul.movies-list {
-  display: flex;
-  flex-wrap: wrap;
 }

@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchGenres } from './../../actions/genres';
+import { fetchGenres, setSelectedGenreId } from './../../actions/genres';
 
 class GenreSelector extends Component {
+
+  constructor(props){
+    super(props);
+    this.handleGenreChange = this.handleGenreChange.bind(this);
+  }
 
   componentDidMount() {
     this.props.fetchGenres();
@@ -16,11 +21,18 @@ class GenreSelector extends Component {
     return optionsArr;
   }
 
+  handleGenreChange(e) {
+    this.props.setSelectedGenreId(e.target.value);
+  }
+
   render() {
     return (
-      <select onChange={ this.props.handleGenreChange }>
-            { this.renderOptions() }
-      </select>
+      <div>
+        <label>Sélectionnez un genre</label>
+        <select onChange={ this.handleGenreChange }>
+              { this.renderOptions() }
+        </select>
+      </div>
     );
   }
   
@@ -31,7 +43,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = {
-  fetchGenres
+  fetchGenres,
+  setSelectedGenreId
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(GenreSelector);
