@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { fetchGenres, setSelectedGenreId } from '../../actions/genres';
 
 class GenreSelector extends Component {
 
@@ -38,13 +36,4 @@ class GenreSelector extends Component {
   
 }
 
-const mapStateToProps = (state) => ({
-  genres: state.genres
-});
-
-const mapDispatchToProps = {
-  fetchGenres,
-  setSelectedGenreId
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(GenreSelector);
+export default GenreSelector;
