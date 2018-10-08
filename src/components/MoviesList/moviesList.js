@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Movie from '../Movie';
 
 class MoviesList extends Component {
@@ -25,6 +26,12 @@ class MoviesList extends Component {
       </ul>
     );
   }
+}
+
+MoviesList.PropTypes = {
+  fetchMovies: PropTypes.func,
+  genreId: PropTypes.instanceOf,
+  movies: PropTypes.array
 }
 
 export default MoviesList;

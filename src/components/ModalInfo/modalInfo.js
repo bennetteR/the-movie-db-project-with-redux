@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ModalInfo extends Component {
 
@@ -28,7 +29,10 @@ class ModalInfo extends Component {
       </div>
     );
   }
-  
+}
+
+ModalInfo.PropTypes = {
+  movie: PropTypes.object
 }
 
 export default ModalInfo;

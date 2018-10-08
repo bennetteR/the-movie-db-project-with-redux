@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class GenreSelector extends Component {
 
@@ -34,6 +35,12 @@ class GenreSelector extends Component {
     );
   }
   
+}
+
+GenreSelector.PropTypes = {
+  genres: PropTypes.array,
+  fetchGenres: PropTypes.func,
+  setSelectedGenreId: PropTypes.func
 }
 
 export default GenreSelector;
