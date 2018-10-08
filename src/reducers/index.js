@@ -1,7 +1,7 @@
 const initialState = {
   movies: [],
   genres: [],
-  genreId: 28
+  genreId: '28'
 }
 
 export default function reducer(state = initialState, action) {

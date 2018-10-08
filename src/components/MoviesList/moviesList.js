@@ -30,7 +30,7 @@ class MoviesList extends Component {
 
 MoviesList.propTypes = {
   fetchMovies: PropTypes.func,
-  genreId: PropTypes.number,
+  genreId: PropTypes.string,
   movies: PropTypes.array
 }
 
