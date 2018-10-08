@@ -1,4 +1,4 @@
-import GenreSelector from './genre-selector';
-import './genre-selector.css';
+import GenreSelector from './genreSelector';
+import './genreSelector.css';
 
 export default GenreSelector;

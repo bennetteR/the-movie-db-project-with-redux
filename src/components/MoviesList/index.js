@@ -1,4 +1,4 @@
-import MoviesList from './movies-list';
-import './movies-list.css';
+import MoviesList from './moviesList';
+import './moviesList.css';
 
 export default MoviesList;

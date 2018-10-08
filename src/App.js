@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import GenreSelector from './components/GenreSelector';
-import MoviesList from './components/MoviesList';
+import GenreSelector from './containers/genreSelector.js';
+import MoviesList from './containers/moviesList.js';
 import './App.css';
 
 class App extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchGenres, setSelectedGenreId } from './../../actions/genres';
+import { fetchGenres, setSelectedGenreId } from '../../actions/genres';
 
 class GenreSelector extends Component {
 

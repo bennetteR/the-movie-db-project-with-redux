@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Movie from './../Movie';
-import { fetchMovies } from './../../actions/movies';
+import Movie from '../Movie';
 
 class MoviesList extends Component {
 
@@ -29,13 +27,4 @@ class MoviesList extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  movies: state.movies,
-  genreId: state.genreId
-});
-
-const mapDispatchToProps = {
-  fetchMovies
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(MoviesList);
+export default MoviesList;

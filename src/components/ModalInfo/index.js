@@ -1,4 +1,4 @@
-import ModalInfo from './modal-info';
-import './modal-info.css';
+import ModalInfo from './modalInfo';
+import './modalInfo.css';
 
 export default ModalInfo;
