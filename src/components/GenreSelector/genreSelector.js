@@ -37,7 +37,7 @@ class GenreSelector extends Component {
   
 }
 
-GenreSelector.PropTypes = {
+GenreSelector.propTypes = {
   genres: PropTypes.array,
   fetchGenres: PropTypes.func,
   setSelectedGenreId: PropTypes.func

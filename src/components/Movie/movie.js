@@ -66,7 +66,7 @@ class Movie extends Component {
   }
 }
 
-Movie.PropTypes = {
+Movie.propTypes = {
   details: PropTypes.object
 }
 

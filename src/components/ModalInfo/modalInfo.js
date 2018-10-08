@@ -31,7 +31,7 @@ class ModalInfo extends Component {
   }
 }
 
-ModalInfo.PropTypes = {
+ModalInfo.propTypes = {
   movie: PropTypes.object
 }
 
